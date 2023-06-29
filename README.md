@@ -157,6 +157,7 @@ $ kubectl delete pvc -l release=$release
 | pvc.enabled | bool | `true` |  |
 | pvc.size | string | `"1Gi"` |  |
 | pvc.storageClassName | string | `""` |  |
+| pvc.existingClaim | string | `""` |  |
 | redis.cluster.enabled | bool | `false` | Cluster mode for Redis |
 | redis.enabled | bool | `true` | Flag to control whether to deploy Redis |
 | redis.fullnameOverride | string | `"redis"` | Name override for the redis deployment |
