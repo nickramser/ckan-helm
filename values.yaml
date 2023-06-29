@@ -26,6 +26,7 @@ pvc:
   size: "1Gi"
   storageClassName: ""
   accessmode: "ReadWriteOnce"
+  existingClaim: ""
 
 # DBDeploymentName -- Variable for name override for postgres deployment
 DBDeploymentName: &DBDeploymentName postgres

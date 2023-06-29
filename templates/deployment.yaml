@@ -31,7 +31,11 @@ spec:
       volumes:
         - name: "ckan"
           persistentVolumeClaim:
+            {{ if .Values.pvc.existingClaim }}
+            claimName: {{ .Values.pvc.existingClaim }}
+            {{ else }}
             claimName: "ckan"
+            {{ end }}
       {{ end }}
       {{ if .Values.pvc.enabled }}
       initContainers:
