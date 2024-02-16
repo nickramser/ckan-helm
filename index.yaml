@@ -2,6 +2,33 @@ apiVersion: v1
 entries:
   ckan:
   - apiVersion: v2
+    appVersion: 2.10.3
+    created: "2024-02-16T14:42:48.63117806Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://keitaro-charts.storage.googleapis.com
+      version: 16.5.5
+    - condition: solr.enabled
+      name: solr
+      repository: https://keitaro-charts.storage.googleapis.com
+      version: 4.1.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://keitaro-charts.storage.googleapis.com
+      version: 10.16.2
+    - condition: datapusher.enabled
+      name: datapusher
+      repository: https://keitaro-charts.storage.googleapis.com
+      version: 1.0.0
+    description: CKAN Helm chart
+    digest: 1cd0f722f8cbbf5dd0e3053e92b77ca2b9aef15a7719b0f6516cb2fb8968c768
+    name: ckan
+    type: application
+    urls:
+    - https://github.com/nickramser/ckan-helm/releases/download/ckan-3.3.1/ckan-3.3.1.tgz
+    version: 3.3.1
+  - apiVersion: v2
     appVersion: 2.9.9
     created: "2023-10-16T14:45:15.722557623Z"
     dependencies:
@@ -82,4 +109,4 @@ entries:
     urls:
     - https://github.com/nickramser/ckan-helm/releases/download/ckan-2.0.1-nickramser/ckan-2.0.1-nickramser.tgz
     version: 2.0.1-nickramser
-generated: "2023-10-16T14:45:15.722580625Z"
+generated: "2024-02-16T14:42:48.631192206Z"
